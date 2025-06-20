@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Reforma Tributária no Transporte: Guia Definitivo </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+O curso “Reforma Tributária no Transporte: Guia Definitivo” é uma solução educacional estratégica, criada pela equipe da Funcional em parceria com PB Contabilidade Integrada e Sobocinski Advogados. Com uma abordagem prática e aplicada, o conteúdo é voltado exclusivamente para o setor de Transporte Rodoviário de Cargas, trazendo um panorama completo sobre os impactos reais da Reforma Tributária nas operações logísticas, financeiras, fiscais e contábeis.
+
+Ao longo de módulos gravados, materiais de apoio e aulões ao vivo, o aluno aprenderá a importância de proteger a margem de lucro da empresa, ajustar seus processos internos, antecipar riscos e identificar oportunidades de adequação fiscal. Ideal para empresários, sócios, diretores financeiros, contadores e profissionais tributários, o curso é também uma porta de entrada para soluções mais personalizadas, como a Mentoria de Diagnóstico Tributário para Transportadoras, oferecida pela Funcional.
+
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">TAX030</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Gestão Tributária</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-question-circle icon"></i>Classificação BCG</label>
+      <div class="form-value">Interrogação</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ul data-start="269" data-end="872">
+<li data-start="269" data-end="467">
+<p data-start="271" data-end="467"><strong data-start="271" data-end="360">Curso online com foco prático e aplicável ao setor de transporte rodoviário de cargas</strong>, abordando os impactos da Reforma Tributária em áreas como fiscal, contábil, jurídica e gestão financeira.</p>
+</li>
+<li data-start="468" data-end="642">
+<p data-start="470" data-end="493"><strong data-start="470" data-end="492">Formato de entrega</strong>:</p>
+<ul data-start="496" data-end="642">
+<li data-start="496" data-end="518">
+<p data-start="498" data-end="518">Videoaulas gravadas;</p>
+</li>
+<li data-start="521" data-end="562">
+<p data-start="523" data-end="562">Materiais de apoio em PDF e checklists;</p>
+</li>
+<li data-start="565" data-end="642">
+<p data-start="567" data-end="642">Lives exclusivas (aulões ao vivo) para alunos do grupo oficial no WhatsApp.</p>
+</li>
+</ul>
+</li>
+<li data-start="643" data-end="748">
+<p data-start="645" data-end="748"><strong data-start="645" data-end="678">Liberação de conteúdo gradual</strong>, para reduzir o risco de cancelamentos durante o período de garantia.</p>
+</li>
+<li data-start="749" data-end="788">
+<p data-start="751" data-end="788"><strong data-start="751" data-end="788">Acesso à plataforma por 24 meses.</strong></p>
+</li>
+<li data-start="789" data-end="872">
+<p data-start="791" data-end="872"><strong data-start="791" data-end="811">Suporte ao aluno</strong>: via Help Desk da Hotmart e WhatsApp comercial da Funcional.</p>
+</li>
+</ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ul data-start="910" data-end="1249">
+<li data-start="910" data-end="994">
+<p data-start="912" data-end="994">Falta de entendimento sobre como a Reforma Tributária afeta o setor de transporte.</p>
+</li>
+<li data-start="995" data-end="1059">
+<p data-start="997" data-end="1059">Risco de perda de margem por falta de planejamento antecipado.</p>
+</li>
+<li data-start="1060" data-end="1154">
+<p data-start="1062" data-end="1154">Dificuldade em entender as mudanças práticas exigidas nas áreas fiscal, contábil e jurídica.</p>
+</li>
+<li data-start="1155" data-end="1249">
+<p data-start="1157" data-end="1249">Ausência de orientação direcionada e prática para empresários e gestores de transportadoras.</p>
+</li>
+</ul>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ul data-start="1276" data-end="1662">
+<li data-start="1276" data-end="1357">
+<p data-start="1278" data-end="1357"><strong data-start="1278" data-end="1357">Clareza sobre os impactos reais da Reforma Tributária para transportadoras.</strong></p>
+</li>
+<li data-start="1358" data-end="1435">
+<p data-start="1360" data-end="1435"><strong data-start="1360" data-end="1435">Ações práticas para preservar a margem de lucro e adequar as operações.</strong></p>
+</li>
+<li data-start="1436" data-end="1514">
+<p data-start="1438" data-end="1514"><strong data-start="1438" data-end="1514">Atualizações contínuas com base em casos reais de clientes da Funcional.</strong></p>
+</li>
+<li data-start="1515" data-end="1597">
+<p data-start="1517" data-end="1597"><strong data-start="1517" data-end="1597">Suporte estratégico e técnico direto de especialistas da área de transporte.</strong></p>
+</li>
+<li data-start="1598" data-end="1662">
+<p data-start="1600" data-end="1662"><strong data-start="1600" data-end="1662">Participação em aulões com conteúdo complementar ao curso.</strong></p>
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Alta</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ul data-start="1693" data-end="1965">
+<li data-start="1693" data-end="1770">
+<p data-start="1695" data-end="1770">Quando o cliente demonstrar preocupação com impactos da Reforma Tributária.</p>
+</li>
+<li data-start="1771" data-end="1830">
+<p data-start="1773" data-end="1830">Em campanhas de captação com foco no setor de transporte.</p>
+</li>
+<li data-start="1831" data-end="1909">
+<p data-start="1833" data-end="1909">Como porta de entrada para empresas que ainda não são clientes da Funcional.</p>
+</li>
+<li data-start="1910" data-end="1965">
+<p data-start="1912" data-end="1965">Durante o ciclo de lançamento e reabertura de turmas.</p>
+</li>
+</ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Oferecemos o único curso do mercado desenvolvido por especialistas que vivem a realidade das transportadoras, com foco 100% prático, orientado para resultados e baseado em casos reais. Garantimos ao aluno ferramentas práticas para proteger sua margem de lucro, evitar riscos fiscais e tomar decisões estratégicas diante da Reforma Tributária.
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mentoria – Diagnóstico Tributário no Transporte	</td>
+            <td>Etapa prática de aplicação personalizada do conteúdo aprendido no curso</td>
+            <td>Gestão Tributária</td>
+        </tr>
+  
+      
+    </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real Lucro Presumido</div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Valor fixo por curso (R$ 5.000,00 para público externo / R$ 2.500,00 para clientes internos via cupom).</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Todo o território nacional (Brasil), via plataforma Hotmart.</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Empresas com faturamento a partir de R$ 1 milhão/ano.
+</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ol data-start="4587" data-end="4787">
+<li data-start="4587" data-end="4627" class="">
+<p data-start="4590" data-end="4627" class="">Não aplicável (compra via Hotmart – plataforma online com registro de cadastro do comprador).</p>
+</li>
+</ol> </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ul data-start="3878" data-end="4084">
+<li data-start="3878" data-end="3911">
+<p data-start="3880" data-end="3911">Transporte Rodoviário de Cargas</p>
+</li>
+<li data-start="3912" data-end="3935">
+<p data-start="3914" data-end="3935">Empresas de Logística</p>
+</li>
+<li data-start="3936" data-end="3973">
+<p data-start="3938" data-end="3973">Operadores de Transporte Multimodal</p>
+</li>
+<li data-start="3974" data-end="4010">
+<p data-start="3976" data-end="4010">Empresários do setor de transporte</p>
+</li>
+<li data-start="4011" data-end="4042">
+<p data-start="4013" data-end="4042">Contadores de transportadoras</p>
+</li>
+<li data-start="4043" data-end="4084">
+<p data-start="4045" data-end="4084">Gerentes financeiros de transportadoras</p>
+</li>
+</ul>      </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>“O preço parece alto.”</td>
+            <td>Comparação com outros cursos online.</td>
+            <td>Explicar que o conteúdo é específico para o setor e evita prejuízos futuros.</td>
+        </tr>
+        <tr>
+            <td>“Vou esperar para ver o que vai mudar de fato.”</td>
+            <td>Cliente está procrastinando a preparação.</td>
+            <td>Mostrar os riscos de inércia e as perdas por não agir preventivamente.</td>
+        </tr>
+        <tr>
+            <td>“Já tenho contador para isso.”</td>
+            <td>Acredita que o contador vai resolver tudo.</td>
+            <td>Destacar que o curso é para gestores e a decisão de ação estratégica depende do empresário.</td>
+        </tr>
+
+       
+    </tbody>
+</table>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+<ul data-start="4884" data-end="5002">
+<li data-start="4884" data-end="4925">
+<p data-start="4886" data-end="4925">Empresários e Sócios de Transportadoras</p>
+</li>
+<li data-start="4926" data-end="4960">
+<p data-start="4928" data-end="4960">Diretores e Gerentes Financeiros</p>
+</li>
+<li data-start="4961" data-end="5002">
+<p data-start="4963" data-end="5002">Contadores de empresas de transporte</p>
+</li>
+</ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">O curso "Reforma Tributária no Transporte: Guia Definitivo" foi criado por especialistas que atuam diretamente no dia a dia das transportadoras. Com abordagem prática e linguagem acessível, capacita empresários, gestores e contadores a entender os impactos da Reforma Tributária no setor de transporte rodoviário de cargas. O conteúdo é objetivo, focado na preservação da margem de lucro, adequação fiscal e tomada de decisão estratégica.
+
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
